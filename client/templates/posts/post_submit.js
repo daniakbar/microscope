@@ -13,7 +13,8 @@ Template.postSubmit.events({
             if (result.postExists)
                 alert('Link Sudah Pernah Di Upload!');
         // post._id = Posts.insert(post);
-        Router.go('postPage', {_id: result._id});
+        // Router.go('postPage', {_id: result._id});
+        Router.go('postsList');
         });
     }
 });
